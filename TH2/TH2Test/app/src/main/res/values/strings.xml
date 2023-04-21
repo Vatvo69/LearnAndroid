@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TH2Test</string>
+    <string-array name="publisher">
+        <item>CNTT</item>
+        <item>Kế toán</item>
+        <item>Thiết kế đồ họa</item>
+        <item>Quản trị kinh doanh</item>
+    </string-array>
+</resources>
