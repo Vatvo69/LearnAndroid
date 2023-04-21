@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BaiTH2</string>
+    <string-array name="publisher">
+        <item>Giao Duc</item>
+        <item>Khoa Hoc Xa Hoi</item>
+        <item>Buu Dien</item>
+        <item>Thong Ke</item>
+    </string-array>
+</resources>
