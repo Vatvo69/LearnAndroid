@@ -52,7 +52,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
             String name = cursor.getString(1);
             String publishDate = cursor.getString(2);
             String publisher = cursor.getString(3);
-            Boolean cb_book = cursor.getInt(4) > 0;
+            Boolean cb_book = cursor.getInt(4) != 0;
             String price = cursor.getFloat(5)+"";
             KhoaHoc khoaHoc = new KhoaHoc(name,publishDate,publisher,price,cb_book);
             khoaHocList.add(khoaHoc);

@@ -3,6 +3,7 @@ package com.example.th2test.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -44,8 +45,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
     }
 
     class KhoaHocViewHolder extends RecyclerView.ViewHolder{
-        private TextView tv1,tv2,tv3,tv4,tv5;
-
+        private TextView tv1,tv2,tv3,tv5;
+        private CheckBox tv4;
         public KhoaHocViewHolder(@NonNull View itemView) {
             super(itemView);
             tv1 = itemView.findViewById(R.id.tv1);
@@ -70,7 +71,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
         khoaHocViewHolder.tv1.setText(khoaHoc.getName());
         khoaHocViewHolder.tv2.setText(khoaHoc.getPublishDate());
         khoaHocViewHolder.tv3.setText(khoaHoc.getPublisher());
-        khoaHocViewHolder.tv4.setEnabled(khoaHoc.isCb_coop());
+        khoaHocViewHolder.tv4.setChecked(khoaHoc.isCb_coop());
         khoaHocViewHolder.tv5.setText(khoaHoc.getPrice());
 
         khoaHocViewHolder.itemView.setOnClickListener(v->{

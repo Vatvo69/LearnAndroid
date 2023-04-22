@@ -42,6 +42,7 @@ public class FirstFragment extends Fragment {
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1));
 
+        
 
     }
 }
